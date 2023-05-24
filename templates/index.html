@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mushroom Characteristics</title>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">      
+  </head>
+  <body>
+    <h1>Mushroom Characteristics</h1>
+    <form method="POST" action="/predict">
+      <label for="gill-size">Gill Size:</label>
+      <select id="gill-size" name="gill-size">
+        <option value="b">Broad</option>
+        <option value="n">Narrow</option>
+      </select>
+
+      <label for="gill-color">Gill Color:</label>
+      <select id="gill-color" name="gill-color">
+        <option value="k">Black</option>
+        <option value="n">Brown</option>
+        <option value="b">Buff</option>
+        <option value="h">Chocolate</option>
+        <option value="g">Gray</option>
+        <option value="r">Green</option>
+        <option value="o">Orange</option>
+        <option value="p">Pink</option>
+        <option value="u">Purple</option>
+        <option value="e">Red</option>
+        <option value="w">White</option>
+        <option value="y">Yellow</option>
+      </select>
+
+      <label for="stalk-root">Stalk Root:</label>
+      <select id="stalk-root" name="stalk-root">
+        <option value="b">Bulbous</option>
+        <option value="c">Club</option>
+        <option value="u">Cup</option>
+        <option value="e">Equal</option>
+        <option value="z">Rhizomorphs</option>
+        <option value="r">Rooted</option>
+      </select>
+
+      <label for="spore-print-color">Spore Print Color:</label>
+      <select id="spore-print-color" name="spore-print-color">
+        <option value="k">Black</option>
+        <option value="n">Brown</option>
+        <option value="b">Buff</option>
+        <option value="h">Chocolate</option>
+        <option value="r">Green</option>
+        <option value="o">Orange</option>
+        <option value="u">Purple</option>
+        <option value="w">White</option>
+        <option value="y">Yellow</option>
+      </select>
+
+      <label for="population">Population:</label>
+      <select id="population" name="population">
+        <option value="a">Abundant</option>
+        <option value="c">Clustered</option>
+        <option value="n">Numerous</option>
+        <option value="s">Scattered</option>
+        <option value="v">Several</option>
+        <option value="y">Solitary</option>
+      </select>
+
+      <div class="button">
+        <input type="submit" value="Predict"></input>
+      </div>
+    </form>
+  </body>
+</html>
